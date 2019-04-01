@@ -1,0 +1,6 @@
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.Models\bin\Debug\ConnectedLevelApp.Models.dll
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.Models\bin\Debug\ConnectedLevelApp.Models.pdb
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.Models\obj\Debug\ConnectedLevelApp.Models.csprojAssemblyReference.cache
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.Models\obj\Debug\ConnectedLevelApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.Models\obj\Debug\ConnectedLevelApp.Models.dll
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.Models\obj\Debug\ConnectedLevelApp.Models.pdb

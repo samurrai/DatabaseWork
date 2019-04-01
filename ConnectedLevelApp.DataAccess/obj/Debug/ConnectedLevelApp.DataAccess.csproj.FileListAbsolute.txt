@@ -1,0 +1,11 @@
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.DataAccess\bin\Debug\Database.mdf
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.DataAccess\bin\Debug\Database_log.ldf
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.DataAccess\bin\Debug\ConnectedLevelApp.DataAccess.dll
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.DataAccess\bin\Debug\ConnectedLevelApp.DataAccess.pdb
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.DataAccess\bin\Debug\ConnectedLevelApp.Models.dll
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.DataAccess\bin\Debug\ConnectedLevelApp.Models.pdb
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.DataAccess\obj\Debug\ConnectedLevelApp.DataAccess.csprojAssemblyReference.cache
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.DataAccess\obj\Debug\ConnectedLevelApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.DataAccess\obj\Debug\ConnectedLevelApp.DataAccess.csproj.CopyComplete
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.DataAccess\obj\Debug\ConnectedLevelApp.DataAccess.dll
+C:\Users\ШадикьянР\source\repos\ConnectedLevelApp\ConnectedLevelApp.DataAccess\obj\Debug\ConnectedLevelApp.DataAccess.pdb
