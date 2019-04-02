@@ -1,14 +1,15 @@
 ﻿using ConnectedLevelApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Data.SqlClient;
 
 namespace ConnectedLevelApp.DataAccess
 {
     public class UsersTableService
     {
-
         private readonly string _connectionString = "";
+        private SqlTransaction transaction;
 
         public UsersTableService()
         {
@@ -30,7 +31,7 @@ namespace ConnectedLevelApp.DataAccess
                     command.CommandText = "select * from Users";
 
                     var sqlDataReader = command.ExecuteReader();
-
+                     
                     while (sqlDataReader.Read())
                     {
                         int id = (int)sqlDataReader["Id"];
@@ -65,22 +66,44 @@ namespace ConnectedLevelApp.DataAccess
                 try
                 {
                     connection.Open();
-                    command.CommandText = $"insert into Users values('{user.Login}', '{user.Password}')";
+                    transaction = connection.BeginTransaction();
+
+                    command.CommandText = "insert into Users values(@login, @password)";
+
+                    var loginParameter = new SqlParameter();
+                    loginParameter.ParameterName = "@login";
+                    loginParameter.SqlDbType = System.Data.SqlDbType.NVarChar;
+                    loginParameter.SqlValue = user.Login;
+
+                    var passwrodParameter = new SqlParameter();
+                    passwrodParameter.ParameterName = "@password";
+                    passwrodParameter.SqlDbType = System.Data.SqlDbType.NVarChar;
+                    passwrodParameter.SqlValue = user.Password;
+
+                    command.Parameters.Add(passwrodParameter);
+                    command.Parameters.Add(loginParameter);
+
+                    command.Transaction = transaction;
+
                     int affectedRows = command.ExecuteNonQuery();
 
                     if (affectedRows < 1)
                     {
                         throw new Exception("Вставка не удалась");
                     }
+
+                    transaction.Commit();
                 }
                 catch (SqlException exception)
                 {
                     // обработать
+                    transaction?.Rollback();
                     throw;
                 }
                 catch (Exception exception)
                 {
                     // обработать
+                    transaction?.Rollback();
                     throw;
                 }
             }
